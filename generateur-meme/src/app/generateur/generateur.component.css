@@ -1,0 +1,19 @@
+.card{
+  border: none;
+}
+
+.app{
+  margin-top: 30px;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.button-container .btn {
+  flex: 1;
+}
+

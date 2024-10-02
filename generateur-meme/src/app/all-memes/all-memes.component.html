@@ -1,0 +1,19 @@
+ <div class="meme-list">
+      <div *ngFor="let meme of memes" class="meme-card">
+
+        <img [src]="meme.imageUrl" alt="Meme image" />
+        <a [href]="meme.imageUrl" download="meme-image.jpg">
+          <button type="button" class="btn btn-success">Télécharger</button>
+        </a>
+        <p><i class="fa-solid fa-square-share-nodes"></i> Partager</p>
+        <div class="share-buttons">
+          <button (click)="shareOnFacebook(meme.imageUrl)"> <i class="fa-brands fa-facebook"></i> Facebook</button>
+          <button (click)="shareOnTwitter(meme.imageUrl)"> <i class="fa-brands fa-twitter"></i> Twitter</button>
+          <button (click)="shareOnInstagram(meme.imageUrl)"> <i class="fa-brands fa-instagram"></i> Instagram</button>
+          <button (click)="shareOnWhatsApp(meme.imageUrl)"> <i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          <button (click)="shareOnMessenger(meme.imageUrl)"> <i class="fa-brands fa-facebook-messenger"></i> Messenger</button>
+          <button (click)="shareOnLinkedin(meme.imageUrl)"> <i class="fa-brands fa-linkedin"></i> Linkedin</button>
+        </div>
+      </div>
+ </div>
+

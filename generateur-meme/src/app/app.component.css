@@ -1,0 +1,20 @@
+header{
+  text-align: center;
+
+  background-color: aqua;
+}
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  color: fuchsia;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
